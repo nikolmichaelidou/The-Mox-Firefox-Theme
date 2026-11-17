@@ -1,22 +1,30 @@
-# The Mox — Firefox Theme
+# The Mox Terminal — Firefox Theme
 
-A Cyberpunk 2077 Mox-inspired Firefox theme using the uploaded Mox SVG logo and the Core Mox palette.
+A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG and the Core Mox palette.
+
+## Terminal-style look
+
+- Deep violet-black browser frame and address field
+- Deep plum active tabs and elevated surfaces
+- Magenta active-tab, attention, and highlight accents
+- Ultraviolet focus borders and selection states
+- Cyan readouts, text, loading, and toolbar icons
+- Cyber teal inactive text, separators, and trim
 
 ## Uploaded artwork
 
-- `assets/moxlogo.svg` — extension icon and header artwork
-- `assets/moxlogo.jpg` — JPEG backup of the logo
+- `assets/moxlogo.svg` — extension icon and visual identity
 
-No theme artwork is generated. Optional source wallpapers remain in `assets/` but are not used.
+No theme artwork or wallpaper is generated.
 
 ## Palette
 
-- `#0D0E15` — Abyssal Violet-Black: frame, fields, sidebar, popups, and new-tab canvas
-- `#1E012A` — Deep Plum Shadow: toolbar and elevated surfaces
-- `#FF007F` — Laser Magenta: active tabs, buttons, attention icons, and highlights
-- `#7000FF` — Electric Ultraviolet: focus borders, loading, hover, and selection
-- `#00F0FF` — Neon Cyan: text and toolbar icons
-- `#55EAD4` — Cyber Teal: separators and inactive text
+- `#0D0E15` — Abyssal Violet-Black: frame, address field, popups, and new-tab canvas
+- `#1E012A` — Deep Plum Shadow: active tabs and elevated surfaces
+- `#FF007F` — Laser Magenta: active tabs, attention, and highlights
+- `#7000FF` — Electric Ultraviolet: focus, loading, hover, and selection
+- `#00F0FF` — Neon Cyan: terminal-style text and icons
+- `#55EAD4` — Cyber Teal: inactive text and separators
 
 ## Test locally
 
@@ -26,13 +34,11 @@ No theme artwork is generated. Optional source wallpapers remain in `assets/` bu
 
 ## Package
 
-Run:
-
 ```powershell
 .\package.ps1
 ```
 
-The package is written to `dist/the-mox-1.5.1.xpi`.
+The package is written to `dist/the-mox-terminal-1.6.0.xpi`.
 
 ## Install the package
 

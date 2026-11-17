@@ -5,8 +5,8 @@ $dist = Join-Path $root "dist"
 New-Item -ItemType Directory -Force -Path $dist | Out-Null
 
 $manifest = Get-Content -Raw (Join-Path $root "manifest.json") | ConvertFrom-Json
-$output = Join-Path $dist "the-mox-$($manifest.version).xpi"
-$tempZip = Join-Path $dist "the-mox-$($manifest.version).zip"
+$output = Join-Path $dist "the-mox-terminal-$($manifest.version).xpi"
+$tempZip = Join-Path $dist "the-mox-terminal-$($manifest.version).zip"
 
 if (Test-Path $output) { Remove-Item $output }
 if (Test-Path $tempZip) { Remove-Item $tempZip }
