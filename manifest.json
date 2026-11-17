@@ -1,0 +1,70 @@
+{
+  "manifest_version": 2,
+  "name": "The Mox",
+  "version": "1.5.1",
+  "description": "A Cyberpunk 2077 Mox-inspired Firefox theme using the uploaded Mox SVG logo and the Core Mox color palette.",
+  "author": "Firefox Theme",
+  "icons": {
+    "48": "assets/moxlogo.svg",
+    "96": "assets/moxlogo.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "the-mox@firefox-theme.local",
+      "strict_min_version": "112.0"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "assets/moxlogo.svg",
+      "additional_backgrounds": ["assets/moxlogo.svg"]
+    },
+    "colors": {
+      "frame": "#1E012A",
+      "frame_inactive": "#0D0E15",
+      "toolbar": "#1E012A",
+      "toolbar_text": "#00F0FF",
+      "toolbar_field": "#0D0E15",
+      "toolbar_field_text": "#FFFFFF",
+      "toolbar_field_border": "#55EAD4",
+      "toolbar_field_focus": "#0D0E15",
+      "toolbar_field_border_focus": "#7000FF",
+      "toolbar_top_separator": "#7000FF",
+      "toolbar_bottom_separator": "#FF007F",
+      "toolbar_vertical_separator": "#55EAD4",
+      "tab_background_text": "#55EAD4",
+      "tab_selected": "#0D0E15",
+      "tab_text": "#FFFFFF",
+      "tab_line": "#FF007F",
+      "tab_loading": "#7000FF",
+      "tab_selected_text": "#FFFFFF",
+      "bookmark_text": "#00F0FF",
+      "button_background_hover": "#7000FF",
+      "button_background_active": "#FF007F",
+      "icons": "#00F0FF",
+      "icons_attention": "#FF007F",
+      "sidebar": "#0D0E15",
+      "sidebar_text": "#00F0FF",
+      "sidebar_border": "#55EAD4",
+      "sidebar_highlight": "#7000FF",
+      "sidebar_highlight_text": "#FFFFFF",
+      "popup": "#1E012A",
+      "popup_text": "#FFFFFF",
+      "popup_border": "#7000FF",
+      "popup_highlight": "#FF007F",
+      "popup_highlight_text": "#FFFFFF",
+      "ntp_background": "#0D0E15",
+      "ntp_text": "#00F0FF",
+      "sidebar_text_inactive": "#55EAD4"
+    },
+    "properties": {
+      "accentcolor": "#1E012A",
+      "textcolor": "#00F0FF",
+      "toolbar_field_focus": "#7000FF",
+      "toolbar_field_text_focus": "#FFFFFF",
+      "color_scheme": "dark",
+      "additional_backgrounds_alignment": ["right top"],
+      "additional_backgrounds_tiling": ["no-repeat"]
+    }
+  }
+}
