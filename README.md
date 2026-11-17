@@ -2,6 +2,11 @@
 
 A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG and the Core Mox palette.
 
+## Project roadmap
+
+- Chrome compatibility is planned. A Chrome-compatible manifest and browser theme package will be added in a future release.
+- The project is planned for upload to the Mozilla Firefox theme store (Firefox AMO) after final testing and artwork review.
+
 ## Terminal-style look
 
 - Deep violet-black browser frame and address field
