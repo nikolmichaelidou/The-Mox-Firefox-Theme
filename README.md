@@ -5,7 +5,7 @@ A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG 
 ## Project roadmap
 
 - Chrome compatibility is planned. A Chrome-compatible manifest and browser theme package will be added in a future release.
-- The project is planned for upload to the Mozilla Firefox theme store (Firefox AMO) after final testing and artwork review.
+- Both themes (The Mox Terminal and The Mox Terminal Alt) have been submitted to the Mozilla Firefox theme store (Firefox AMO) and are awaiting review. A store link will be added here once they are approved.
 
 ## Terminal-style look
 
@@ -62,4 +62,4 @@ The package is written to `dist/the-mox-terminal-1.6.0.xpi`. Use `-Alt` to packa
 
 Open `about:addons`, choose **Themes**, and use **Install Add-on From File** if available.
 
-For public distribution, submit the `.xpi` through Mozilla Add-ons (AMO).
+Both themes have been uploaded to Mozilla Add-ons (AMO). Until they are approved and listed, install from the `.xpi` or `.zip` attached to the [GitHub releases](https://github.com/nikolmichaelidou/The-Mox-Firefox-Theme/releases). Firefox may install an `.xpi` link directly instead of downloading it, so use the `.zip` if you need the file itself.
