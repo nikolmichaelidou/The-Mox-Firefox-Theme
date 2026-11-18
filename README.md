@@ -33,16 +33,15 @@ The main theme uses no generated artwork or wallpaper. The alt version adds a ge
 
 ## Alt version
 
-`alt/` is a self-contained alternate version, **The Mox Terminal Alt**, with its own `manifest.json` and `assets/`. It has a separate add-on ID (`the-mox-terminal-alt@firefox-theme.local`) and version (`0.1.0`), so it can be installed alongside the main theme.
+`alt/` is a self-contained alternate version, **The Mox Terminal Alt**, with its own `manifest.json` and `assets/`. It has a separate add-on ID (`the-mox-terminal-alt@firefox-theme.local`) and version (`0.2.0`), so it can be installed alongside the main theme.
 
-It uses the same palette and adds an animated terminal-style header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
+It uses the same palette and adds a terminal-style header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
 
-- Two layers of scrolling boot-log, ssh, and hex lines
-- CRT scanlines, a moving scanline, and a cyan sweep beam
-- An occasional magenta glitch flash
-- A `MOX://TERMINAL` status box with a blinking `netrunner@mox:~$` cursor at the right edge
+- A dim, slowly scrolling boot-log and hex ticker over a faint grid
+- A violet-to-magenta glow toward the right edge
+- A `MOX://TERMINAL` status panel with a blinking `netrunner@mox:~$` cursor, placed clear of the window controls
 
-The header is a 3840×64 SVG anchored to the right edge of the window. It uses SMIL animation, so it needs no scripts. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.1.0.xpi`.
+The header is a 3000×200 SVG (AMO's recommended size) anchored to the right edge of the window. It uses lightweight SMIL animation, so it needs no scripts. The alt colors keep neon cyan for icons and the magenta for the active-tab line and focus ring. Text is softer and borders are quieter so the neon reads as accents. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.2.0.xpi`.
 
 ## Test locally
 
