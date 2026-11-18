@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="64" viewBox="0 0 3840 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0D0E15"/>
+      <stop offset="0.6" stop-color="#14041F"/>
+      <stop offset="1" stop-color="#1E012A"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F0FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00F0FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#00F0FF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" opacity="0.35"/>
+    </pattern>
+    <g id="log" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="11">
+      <text x="0" y="14" fill="#55EAD4" textLength="1600" lengthAdjust="spacing">[ OK ] mox.sys boot 0x7F3A :: NET//LINK ESTABLISHED :: ICE BREACH 0xC0FFEE :: PACKET 4F 2A 9B 11 :: uplink 99.8% :: [ OK ]</text>
+      <text x="0" y="30" fill="#FF007F" textLength="1600" lengthAdjust="spacing">&gt; ssh netrunner@mox.local -p 2077 :: auth ok :: daemon: quickhack.exe :: sector 07 scan :: 0xDEADBEEF :: &gt;&gt;&gt;</text>
+      <text x="0" y="46" fill="#7000FF" textLength="1600" lengthAdjust="spacing">01001101 01001111 01011000 :: ctrl.flow 0xFF00 :: handshake sync :: cipher AES-256 :: trace 0.00ms :: 01001101 01001111</text>
+    </g>
+    <g id="ticker">
+      <use xlink:href="#log" x="0"/>
+      <use xlink:href="#log" x="1600"/>
+      <use xlink:href="#log" x="3200"/>
+      <use xlink:href="#log" x="4800"/>
+    </g>
+  </defs>
+
+  <rect width="3840" height="64" fill="url(#bg)"/>
+
+  <g opacity="0.45">
+    <use xlink:href="#ticker">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-1600 0" dur="40s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <g opacity="0.3" transform="translate(0 4)">
+    <use xlink:href="#ticker">
+      <animateTransform attributeName="transform" type="translate" from="-1600 0" to="0 0" dur="65s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <rect x="0" y="0" width="300" height="64" fill="url(#beam)" opacity="0.5">
+    <animate attributeName="x" from="-300" to="3840" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect width="3840" height="64" fill="url(#scan)"/>
+
+  <rect x="0" y="-3" width="3840" height="3" fill="#00F0FF" opacity="0.18">
+    <animate attributeName="y" values="-3;64" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="0" y="0" width="3840" height="64" fill="#FF007F" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.12;0;0.06;0;0;0;0" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <g transform="translate(3300 0)" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="13">
+    <rect x="0" y="12" width="520" height="40" fill="#0D0E15" opacity="0.8"/>
+    <rect x="0" y="12" width="520" height="40" fill="none" stroke="#7000FF" stroke-width="1"/>
+    <text x="12" y="28" fill="#55EAD4">MOX://TERMINAL v1.6 [ONLINE]</text>
+    <text x="12" y="45" fill="#FF007F">netrunner@mox:~$</text>
+    <rect x="148" y="34" width="8" height="13" fill="#00F0FF">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="500" cy="22" r="3" fill="#00F0FF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect x="0" y="62" width="3840" height="2" fill="#FF007F" opacity="0.8"/>
+</svg>

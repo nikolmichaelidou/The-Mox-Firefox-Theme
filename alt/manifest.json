@@ -1,0 +1,67 @@
+{
+  "manifest_version": 2,
+  "name": "The Mox Terminal Alt",
+  "version": "0.1.0",
+  "description": "A terminal-inspired Cyberpunk 2077 Mox theme using deep violet-black, magenta, ultraviolet, cyan, and cyber teal.",
+  "author": "Firefox Theme",
+  "icons": {
+    "48": "assets/moxlogo.svg",
+    "96": "assets/moxlogo.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "the-mox-terminal-alt@firefox-theme.local",
+      "strict_min_version": "112.0"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "assets/header-terminal.svg"
+    },
+    "colors": {
+      "frame": "#0D0E15",
+      "frame_inactive": "#1E012A",
+      "toolbar": "#0D0E15",
+      "toolbar_text": "#00F0FF",
+      "toolbar_field": "#0D0E15",
+      "toolbar_field_text": "#55EAD4",
+      "toolbar_field_border": "#7000FF",
+      "toolbar_field_focus": "#0D0E15",
+      "toolbar_field_border_focus": "#FF007F",
+      "toolbar_top_separator": "#7000FF",
+      "toolbar_bottom_separator": "#FF007F",
+      "toolbar_vertical_separator": "#55EAD4",
+      "tab_background_text": "#55EAD4",
+      "tab_selected": "#1E012A",
+      "tab_text": "#00F0FF",
+      "tab_line": "#FF007F",
+      "tab_loading": "#00F0FF",
+      "tab_selected_text": "#FFFFFF",
+      "bookmark_text": "#55EAD4",
+      "button_background_hover": "#1E012A",
+      "button_background_active": "#7000FF",
+      "icons": "#00F0FF",
+      "icons_attention": "#FF007F",
+      "sidebar": "#0D0E15",
+      "sidebar_text": "#55EAD4",
+      "sidebar_border": "#7000FF",
+      "sidebar_highlight": "#7000FF",
+      "sidebar_highlight_text": "#FFFFFF",
+      "popup": "#0D0E15",
+      "popup_text": "#55EAD4",
+      "popup_border": "#FF007F",
+      "popup_highlight": "#7000FF",
+      "popup_highlight_text": "#FFFFFF",
+      "ntp_background": "#0D0E15",
+      "ntp_text": "#55EAD4",
+      "sidebar_text_inactive": "#55EAD4"
+    },
+    "properties": {
+      "accentcolor": "#0D0E15",
+      "textcolor": "#00F0FF",
+      "toolbar_field_focus": "#FF007F",
+      "toolbar_field_text_focus": "#FFFFFF",
+      "color_scheme": "dark"
+    }
+  }
+}

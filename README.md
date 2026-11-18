@@ -20,7 +20,7 @@ A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG 
 
 - `assets/moxlogo.svg` — extension icon and visual identity
 
-No theme artwork or wallpaper is generated.
+The main theme uses no generated artwork or wallpaper. The alt version adds a generated animated header (see [Alt version](#alt-version)).
 
 ## Palette
 
@@ -31,11 +31,24 @@ No theme artwork or wallpaper is generated.
 - `#00F0FF` — Neon Cyan: terminal-style text and icons
 - `#55EAD4` — Cyber Teal: inactive text and separators
 
+## Alt version
+
+`alt/` is a self-contained alternate version, **The Mox Terminal Alt**, with its own `manifest.json` and `assets/`. It has a separate add-on ID (`the-mox-terminal-alt@firefox-theme.local`) and version (`0.1.0`), so it can be installed alongside the main theme.
+
+It uses the same palette and adds an animated terminal-style header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
+
+- Two layers of scrolling boot-log, ssh, and hex lines
+- CRT scanlines, a moving scanline, and a cyan sweep beam
+- An occasional magenta glitch flash
+- A `MOX://TERMINAL` status box with a blinking `netrunner@mox:~$` cursor at the right edge
+
+The header is a 3840×64 SVG anchored to the right edge of the window. It uses SMIL animation, so it needs no scripts. It has not been packaged yet; `package.ps1` only builds the main theme.
+
 ## Test locally
 
 1. Open `about:debugging#/runtime/this-firefox` in Firefox.
 2. Select **Load Temporary Add-on**.
-3. Choose `manifest.json`.
+3. Choose `manifest.json` (or `alt/manifest.json` for the alt version).
 
 ## Package
 
