@@ -42,7 +42,7 @@ It uses the same palette and adds an animated terminal-style header, `alt/assets
 - An occasional magenta glitch flash
 - A `MOX://TERMINAL` status box with a blinking `netrunner@mox:~$` cursor at the right edge
 
-The header is a 3840×64 SVG anchored to the right edge of the window. It uses SMIL animation, so it needs no scripts. It has not been packaged yet; `package.ps1` only builds the main theme.
+The header is a 3840×64 SVG anchored to the right edge of the window. It uses SMIL animation, so it needs no scripts. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.1.0.xpi`.
 
 ## Test locally
 
@@ -56,7 +56,7 @@ The header is a 3840×64 SVG anchored to the right edge of the window. It uses S
 .\package.ps1
 ```
 
-The package is written to `dist/the-mox-terminal-1.6.0.xpi`.
+The package is written to `dist/the-mox-terminal-1.6.0.xpi`. Use `-Alt` to package the alt version instead.
 
 ## Install the package
 

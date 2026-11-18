@@ -1,12 +1,16 @@
+param([switch]$Alt)
+
 $ErrorActionPreference = "Stop"
 
-$root = $PSScriptRoot
-$dist = Join-Path $root "dist"
+$repo = $PSScriptRoot
+$root = if ($Alt) { Join-Path $repo "alt" } else { $repo }
+$name = if ($Alt) { "the-mox-terminal-alt" } else { "the-mox-terminal" }
+$dist = Join-Path $repo "dist"
 New-Item -ItemType Directory -Force -Path $dist | Out-Null
 
 $manifest = Get-Content -Raw (Join-Path $root "manifest.json") | ConvertFrom-Json
-$output = Join-Path $dist "the-mox-terminal-$($manifest.version).xpi"
-$tempZip = Join-Path $dist "the-mox-terminal-$($manifest.version).zip"
+$output = Join-Path $dist "$name-$($manifest.version).xpi"
+$tempZip = Join-Path $dist "$name-$($manifest.version).zip"
 
 if (Test-Path $output) { Remove-Item $output }
 if (Test-Path $tempZip) { Remove-Item $tempZip }
