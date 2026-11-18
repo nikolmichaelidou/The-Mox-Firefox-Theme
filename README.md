@@ -1,5 +1,7 @@
 # The Mox Terminal — Firefox Theme
 
+<p align="center"><img src="docs/mox-logo.png" alt="Moxes logo" width="180"></p>
+
 A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG and the Core Mox palette.
 
 ## Project roadmap
@@ -33,6 +35,10 @@ The main theme uses no generated artwork or wallpaper. The alt version adds a ge
 
 ## Alt version
 
+![The Mox Terminal Alt — browser preview](docs/alt-browser-preview.png)
+
+*Illustrative preview built from the theme's real header and colors; actual rendering varies by Firefox version and OS.*
+
 `alt/` is a self-contained alternate version, **The Mox Terminal Alt**, with its own `manifest.json` and `assets/`. It has a separate add-on ID (`the-mox-terminal-alt@firefox-theme.local`) and version (`0.3.0`), so it can be installed alongside the main theme.
 
 It uses the same palette and adds an animated Cyberpunk 2077-style terminal header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
@@ -41,6 +47,8 @@ It uses the same palette and adds an animated Cyberpunk 2077-style terminal head
 - A `BREACH` panel of hex codes (`1C BD 55 E9 7A`) with a highlight stepping through the sequence, like the Breach Protocol minigame
 - A `netrunner@mox:~$` prompt with a blinking cursor and pulsing status dot
 - An occasional magenta glitch flicker, a violet-to-magenta glow toward the right edge, and a magenta-to-cyan top edge line
+
+![Alt header close-up](docs/alt-header-preview.png)
 
 The header is a 3000×200 SVG (AMO's recommended size) anchored to the right edge of the window. It uses lightweight SMIL animation, so it needs no scripts. Only a few small elements animate and there are no full-frame animated layers, so the UI stays smooth. The alt colors use soft ice-white text, quiet purple borders, neon cyan icons, and magenta only for the active-tab line and focus ring. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.3.0.xpi`.
 
