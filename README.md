@@ -33,15 +33,16 @@ The main theme uses no generated artwork or wallpaper. The alt version adds a ge
 
 ## Alt version
 
-`alt/` is a self-contained alternate version, **The Mox Terminal Alt**, with its own `manifest.json` and `assets/`. It has a separate add-on ID (`the-mox-terminal-alt@firefox-theme.local`) and version (`0.2.0`), so it can be installed alongside the main theme.
+`alt/` is a self-contained alternate version, **The Mox Terminal Alt**, with its own `manifest.json` and `assets/`. It has a separate add-on ID (`the-mox-terminal-alt@firefox-theme.local`) and version (`0.3.0`), so it can be installed alongside the main theme.
 
-It uses the same palette and adds a static terminal-style header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
+It uses the same palette and adds an animated Cyberpunk 2077-style terminal header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
 
-- A deep violet-black to plum gradient with a violet-to-magenta glow toward the right edge
-- A thin magenta-to-cyan edge line along the top
-- A small cut-corner status chip with cyan, violet, and magenta indicator bars at the right of the tab strip
+- A dim boot-log and hex ticker that scrolls slowly behind the tabs (with a hidden `Lizzie's Bar` easter egg), with faint CRT scanlines and a soft cyan sweep
+- A `BREACH` panel of hex codes (`1C BD 55 E9 7A`) with a highlight stepping through the sequence, like the Breach Protocol minigame
+- A `netrunner@mox:~$` prompt with a blinking cursor and pulsing status dot
+- An occasional magenta glitch flicker, a violet-to-magenta glow toward the right edge, and a magenta-to-cyan top edge line
 
-The header is a 3000×200 SVG (AMO's recommended size) anchored to the right edge of the window. It has no text or animation: text behind the tabs was clipped and noisy, and animating the frame made the browser UI stutter. The alt colors use soft ice-white text, quiet purple borders, neon cyan icons, and magenta only for the active-tab line and focus ring. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.2.0.xpi`.
+The header is a 3000×200 SVG (AMO's recommended size) anchored to the right edge of the window. It uses lightweight SMIL animation, so it needs no scripts. Only a few small elements animate and there are no full-frame animated layers, so the UI stays smooth. The alt colors use soft ice-white text, quiet purple borders, neon cyan icons, and magenta only for the active-tab line and focus ring. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.3.0.xpi`.
 
 ## Test locally
 
