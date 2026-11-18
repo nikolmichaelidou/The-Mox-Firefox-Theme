@@ -35,13 +35,13 @@ The main theme uses no generated artwork or wallpaper. The alt version adds a ge
 
 `alt/` is a self-contained alternate version, **The Mox Terminal Alt**, with its own `manifest.json` and `assets/`. It has a separate add-on ID (`the-mox-terminal-alt@firefox-theme.local`) and version (`0.2.0`), so it can be installed alongside the main theme.
 
-It uses the same palette and adds a terminal-style header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
+It uses the same palette and adds a static terminal-style header, `alt/assets/header-terminal.svg`, shown behind the tab strip:
 
-- A dim, slowly scrolling boot-log and hex ticker over a faint grid
-- A violet-to-magenta glow toward the right edge
-- A `MOX://TERMINAL` status panel with a blinking `netrunner@mox:~$` cursor, placed clear of the window controls
+- A deep violet-black to plum gradient with a violet-to-magenta glow toward the right edge
+- A thin magenta-to-cyan edge line along the top
+- A small cut-corner status chip with cyan, violet, and magenta indicator bars at the right of the tab strip
 
-The header is a 3000×200 SVG (AMO's recommended size) anchored to the right edge of the window. It uses lightweight SMIL animation, so it needs no scripts. The alt colors keep neon cyan for icons and the magenta for the active-tab line and focus ring. Text is softer and borders are quieter so the neon reads as accents. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.2.0.xpi`.
+The header is a 3000×200 SVG (AMO's recommended size) anchored to the right edge of the window. It has no text or animation: text behind the tabs was clipped and noisy, and animating the frame made the browser UI stutter. The alt colors use soft ice-white text, quiet purple borders, neon cyan icons, and magenta only for the active-tab line and focus ring. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.2.0.xpi`.
 
 ## Test locally
 
