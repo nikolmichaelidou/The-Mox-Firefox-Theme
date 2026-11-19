@@ -61,7 +61,7 @@ Chrome themes live in their own folders so the Firefox packages are untouched:
 
 Chrome has a smaller theme format than Firefox: colors are RGB arrays, only a handful of color slots exist (frame, toolbar, tab text, bookmark text, omnibox, new-tab page), and SVG images and icons are not supported. So each folder has its own `manifest.json` and PNG assets (`icon128.png`, plus `header-terminal.png` for the alt theme, a static 3000×200 render of the animated header). The header is tiled from the left edge in Chrome, so the right-hand `BREACH` and prompt panels only show on very wide windows.
 
-To test locally, open `chrome://extensions`, enable **Developer mode**, and either drag the packaged `.zip` onto the page or use **Load unpacked** and pick a theme folder. Recent Chrome versions may ignore the `--load-extension` command-line flag.
+To test locally, open `chrome://extensions`, enable **Developer mode**, choose **Load unpacked**, and pick a theme folder (for example `chrome/mox-terminal`). Chrome applies the theme right away and shows an **Undo** button. Chrome doesn't accept a dropped `.zip` outside the Web Store, and recent versions may ignore the `--load-extension` command-line flag.
 
 Package with `.\package-chrome.ps1` (or `-Alt`), which writes `dist/mox-terminal-chrome-1.6.0.zip` or `dist/mox-terminal-alt-chrome-0.3.0.zip`, the format the Chrome Web Store expects.
 
