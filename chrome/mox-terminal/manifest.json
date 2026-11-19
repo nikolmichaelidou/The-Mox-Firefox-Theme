@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "The Mox Terminal",
+  "version": "1.6.0",
+  "description": "A terminal-inspired Cyberpunk 2077 Mox theme using deep violet-black, magenta, ultraviolet, cyan, and cyber teal.",
+  "icons": {
+    "128": "assets/icon128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [13, 14, 21],
+      "frame_inactive": [30, 1, 42],
+      "frame_incognito": [13, 14, 21],
+      "frame_incognito_inactive": [30, 1, 42],
+      "toolbar": [13, 14, 21],
+      "tab_text": [255, 255, 255],
+      "tab_background_text": [85, 234, 212],
+      "bookmark_text": [85, 234, 212],
+      "button_background": [30, 1, 42],
+      "toolbar_button_icon": [0, 240, 255],
+      "omnibox_background": [13, 14, 21],
+      "omnibox_text": [85, 234, 212],
+      "ntp_background": [13, 14, 21],
+      "ntp_text": [85, 234, 212],
+      "ntp_link": [0, 240, 255],
+      "ntp_header": [30, 1, 42]
+    }
+  }
+}

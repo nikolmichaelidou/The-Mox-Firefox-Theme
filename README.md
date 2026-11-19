@@ -6,7 +6,7 @@ A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG 
 
 ## Project roadmap
 
-- Chrome compatibility is planned. A Chrome-compatible manifest and browser theme package will be added in a future release.
+- Chrome versions of both themes are available in [`chrome/`](#chrome-version). They have not yet been submitted to the Chrome Web Store.
 - Both themes (The Mox Terminal and The Mox Terminal Alt) have been submitted to the Mozilla Firefox theme store (Firefox AMO) and are awaiting review. A store link will be added here once they are approved.
 
 ## Terminal-style look
@@ -51,6 +51,19 @@ It uses the same palette and adds an animated Cyberpunk 2077-style terminal head
 ![Alt header close-up](docs/alt-header-preview.png)
 
 The header is a 3000×200 SVG (AMO's recommended size) anchored to the right edge of the window. It uses lightweight SMIL animation, so it needs no scripts. Only a few small elements animate and there are no full-frame animated layers, so the UI stays smooth. The alt colors use soft ice-white text, quiet purple borders, neon cyan icons, and magenta only for the active-tab line and focus ring. Package it with `.\package.ps1 -Alt`, which writes `dist/the-mox-terminal-alt-0.3.0.xpi`.
+
+## Chrome version
+
+Chrome themes live in their own folders so the Firefox packages are untouched:
+
+- `chrome/mox-terminal/` — The Mox Terminal (`1.6.0`)
+- `chrome/mox-terminal-alt/` — The Mox Terminal Alt (`0.3.0`)
+
+Chrome has a smaller theme format than Firefox: colors are RGB arrays, only a handful of color slots exist (frame, toolbar, tab text, bookmark text, omnibox, new-tab page), and SVG images and icons are not supported. So each folder has its own `manifest.json` and PNG assets (`icon128.png`, plus `header-terminal.png` for the alt theme, a static 3000×200 render of the animated header). The header is tiled from the left edge in Chrome, so the right-hand `BREACH` and prompt panels only show on very wide windows.
+
+To test locally, open `chrome://extensions`, enable **Developer mode**, and either drag the packaged `.zip` onto the page or use **Load unpacked** and pick a theme folder. Recent Chrome versions may ignore the `--load-extension` command-line flag.
+
+Package with `.\package-chrome.ps1` (or `-Alt`), which writes `dist/mox-terminal-chrome-1.6.0.zip` or `dist/mox-terminal-alt-chrome-0.3.0.zip`, the format the Chrome Web Store expects.
 
 ## Test locally
 
