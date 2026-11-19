@@ -7,9 +7,15 @@ A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG 
 ## Project roadmap
 
 - Chrome versions of both themes are available in [`chrome/`](#chrome-version). They have not yet been submitted to the Chrome Web Store. The animated header of the Alt theme is **Firefox-only**; on Chrome it is a static image.
-- Both themes (The Mox Terminal and The Mox Terminal Alt) are available for Firefox on [Mozilla Add-ons (AMO)](https://addons.mozilla.org/en-US/developers/themes).
+- Both themes are available for Firefox on Mozilla Add-ons (AMO):
+  - [The Mox Terminal](https://addons.mozilla.org/en-US/firefox/addon/the-mox-terminal/)
+  - [The Mox Terminal Alt (animated)](https://addons.mozilla.org/en-US/firefox/addon/the-mox-terminal-animated/)
 
 ## Terminal-style look
+
+![The Mox Terminal — browser preview](docs/main-browser-preview.png)
+
+*Illustrative preview built from the theme's real colors; actual rendering varies by browser version and OS.*
 
 - Deep violet-black browser frame and address field
 - Deep plum active tabs and elevated surfaces
@@ -89,4 +95,4 @@ The package is written to `dist/the-mox-terminal-1.6.0.xpi`. Use `-Alt` to packa
 
 Open `about:addons`, choose **Themes**, and use **Install Add-on From File** if available.
 
-Both themes are available on Mozilla Add-ons (AMO): <https://addons.mozilla.org/en-US/developers/themes>. You can also install from the `.xpi` or `.zip` attached to the [GitHub releases](https://github.com/nikolmichaelidou/The-Mox-Firefox-Theme/releases). Firefox may install an `.xpi` link directly instead of downloading it, so use the `.zip` if you need the file itself.
+Both themes are available on Mozilla Add-ons (AMO): [The Mox Terminal](https://addons.mozilla.org/en-US/firefox/addon/the-mox-terminal/) and [The Mox Terminal Alt (animated)](https://addons.mozilla.org/en-US/firefox/addon/the-mox-terminal-animated/). You can also install from the `.xpi` or `.zip` attached to the [GitHub releases](https://github.com/nikolmichaelidou/The-Mox-Firefox-Theme/releases). Firefox may install an `.xpi` link directly instead of downloading it, so use the `.zip` if you need the file itself.
