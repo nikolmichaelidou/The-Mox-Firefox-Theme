@@ -6,8 +6,8 @@ A terminal-inspired Cyberpunk 2077 Mox Firefox theme using the uploaded Mox SVG 
 
 ## Project roadmap
 
-- Chrome versions of both themes are available in [`chrome/`](#chrome-version). They have not yet been submitted to the Chrome Web Store.
-- Both themes (The Mox Terminal and The Mox Terminal Alt) have been submitted to the Mozilla Firefox theme store (Firefox AMO) and are awaiting review. A store link will be added here once they are approved.
+- Chrome versions of both themes are available in [`chrome/`](#chrome-version). They have not yet been submitted to the Chrome Web Store. The animated header of the Alt theme is **Firefox-only**; on Chrome it is a static image.
+- Both themes (The Mox Terminal and The Mox Terminal Alt) are available for Firefox on [Mozilla Add-ons (AMO)](https://addons.mozilla.org/en-US/developers/themes).
 
 ## Terminal-style look
 
@@ -63,9 +63,11 @@ Chrome has a smaller theme format than Firefox: colors are RGB arrays, only a ha
 
 To test locally, open `chrome://extensions`, enable **Developer mode**, choose **Load unpacked**, and pick a theme folder (for example `chrome/mox-terminal`). Chrome applies the theme right away and shows an **Undo** button. Chrome doesn't accept a dropped `.zip` outside the Web Store, and recent versions may ignore the `--load-extension` command-line flag.
 
-### Animated header on Chrome (companion extension)
+### Animation on Chrome
 
-A Chrome theme can't show the animated header, so `chrome/mox-terminal-alt-newtab/` is a small companion **extension** (not a theme) that replaces the New Tab page with the real animated `header-terminal.svg` and a terminal-style search prompt. Install it next to The Mox Terminal Alt theme through **Load unpacked**. The tab strip itself stays static, since Chrome offers no way to animate it.
+**The header animation does not work on Chrome.** Chrome themes only support still images, and there is no way to animate the tab strip, so the Chrome Alt theme shows a static frame of the header. The animation works only in the Firefox version.
+
+`chrome/mox-terminal-alt-newtab/` is an **experimental** companion extension (not a theme) that replaces the New Tab page with the animated `header-terminal.svg` and a terminal-style search prompt. It is not confirmed to work in every Chrome setup, so don't rely on it. If you want to try it, install it with **Load unpacked** next to The Mox Terminal Alt theme.
 
 Package with `.\package-chrome.ps1` (or `-Alt`, or `-NewTab` for the companion extension), which writes `dist/mox-terminal-chrome-1.6.0.zip`, `dist/mox-terminal-alt-chrome-0.3.0.zip` or `dist/mox-terminal-alt-newtab-chrome-0.1.0.zip`, the format the Chrome Web Store expects.
 
@@ -87,4 +89,4 @@ The package is written to `dist/the-mox-terminal-1.6.0.xpi`. Use `-Alt` to packa
 
 Open `about:addons`, choose **Themes**, and use **Install Add-on From File** if available.
 
-Both themes have been uploaded to Mozilla Add-ons (AMO). Until they are approved and listed, install from the `.xpi` or `.zip` attached to the [GitHub releases](https://github.com/nikolmichaelidou/The-Mox-Firefox-Theme/releases). Firefox may install an `.xpi` link directly instead of downloading it, so use the `.zip` if you need the file itself.
+Both themes are available on Mozilla Add-ons (AMO): <https://addons.mozilla.org/en-US/developers/themes>. You can also install from the `.xpi` or `.zip` attached to the [GitHub releases](https://github.com/nikolmichaelidou/The-Mox-Firefox-Theme/releases). Firefox may install an `.xpi` link directly instead of downloading it, so use the `.zip` if you need the file itself.
