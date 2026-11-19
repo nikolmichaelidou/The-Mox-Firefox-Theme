@@ -63,7 +63,11 @@ Chrome has a smaller theme format than Firefox: colors are RGB arrays, only a ha
 
 To test locally, open `chrome://extensions`, enable **Developer mode**, choose **Load unpacked**, and pick a theme folder (for example `chrome/mox-terminal`). Chrome applies the theme right away and shows an **Undo** button. Chrome doesn't accept a dropped `.zip` outside the Web Store, and recent versions may ignore the `--load-extension` command-line flag.
 
-Package with `.\package-chrome.ps1` (or `-Alt`), which writes `dist/mox-terminal-chrome-1.6.0.zip` or `dist/mox-terminal-alt-chrome-0.3.0.zip`, the format the Chrome Web Store expects.
+### Animated header on Chrome (companion extension)
+
+A Chrome theme can't show the animated header, so `chrome/mox-terminal-alt-newtab/` is a small companion **extension** (not a theme) that replaces the New Tab page with the real animated `header-terminal.svg` and a terminal-style search prompt. Install it next to The Mox Terminal Alt theme through **Load unpacked**. The tab strip itself stays static, since Chrome offers no way to animate it.
+
+Package with `.\package-chrome.ps1` (or `-Alt`, or `-NewTab` for the companion extension), which writes `dist/mox-terminal-chrome-1.6.0.zip`, `dist/mox-terminal-alt-chrome-0.3.0.zip` or `dist/mox-terminal-alt-newtab-chrome-0.1.0.zip`, the format the Chrome Web Store expects.
 
 ## Test locally
 

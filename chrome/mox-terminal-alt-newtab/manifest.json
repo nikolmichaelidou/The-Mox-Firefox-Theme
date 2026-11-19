@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "The Mox Terminal Alt — Animated New Tab",
+  "version": "0.1.0",
+  "description": "Companion to The Mox Terminal Alt theme: a new tab page with the animated terminal header, which Chrome themes cannot show.",
+  "icons": {
+    "128": "assets/icon128.png"
+  },
+  "permissions": ["search"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
